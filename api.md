@@ -15,7 +15,7 @@ Represents a particular message by it's *id*.
 ## Retrieve message [GET]
 + Response 200 (text/plain)
 
-        Hello World2!
+        Hello World!
 
 ## DELETE MESSAGE DELETE
 + Response 204

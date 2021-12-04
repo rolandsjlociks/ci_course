@@ -11,19 +11,21 @@ class Environment
 
     case env_name
     when 'DEV'
-      parameters[:db_host] = "mariadb"
+      parameters[:db_host] = "127.0.0.1"
+      # parameters[:db_host] = "mysql_db"
       parameters[:db_port] = "3306"
       parameters[:db_username] = "root"
       parameters[:db_password] = "password"
       parameters[:db_database] = "test_users"
-      parameters[:api_host] = "http://api_mocks:3000"
+      parameters[:api_host] = "http://127.0.0.1:3000"
+      # parameters[:api_host] = "http://api:3000"
     when 'PRD'
-      parameters[:db_host] = "mariadb"
+      parameters[:db_host] = "127.0.0.1"
       parameters[:db_port] = "32776"
       parameters[:db_username] = "root"
       parameters[:db_password] = "password"
       parameters[:db_database] = "test_users"
-      parameters[:api_host] = "http://api_mocks:3000"
+      parameters[:api_host] = "http://127.0.0.1:3000"
     else
       #   nothing
     end

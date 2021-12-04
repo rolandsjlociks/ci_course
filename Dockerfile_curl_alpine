@@ -1,6 +1,0 @@
-FROM alpine:latest
-
-LABEL "Author"="Martins Tararujs"
-
-RUN apk update && apk upgrade
-RUN apk add curl

@@ -1,0 +1,4 @@
+FROM api_test_base
+LABEL AUTHOR="Martins Tararujs 2"
+
+COPY features features

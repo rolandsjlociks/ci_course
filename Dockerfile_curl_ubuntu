@@ -1,6 +1,0 @@
-FROM ubuntu:latest
-
-LABEL "Author"="Martins Tararujs"
-
-RUN apt update && apt upgrade
-RUN apt install -y curl

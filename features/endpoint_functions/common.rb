@@ -4,5 +4,5 @@ def assert_message_contains(message)
 end
 
 def assert_http_code(code)
-  assert_equal(code, @test_step.response.code, "HTTP response code does not match. Expected #{code}, got #{@test_step.response.code}")
+  assert_equal(code, @test_step.response.code, "HTTP response code does not match.. Expected #{code}, got #{@test_step.response.code}")
 end
