@@ -60,7 +60,7 @@ pipeline {
 def deploy(String environment){
     echo "Deployment to ${environment}"
     build job: "ui-tests2", parameters: [string(name: "ENVIRONMENT", value: "${environment}")]
-    sh "docker run -d --rm -v $PWD/api.md:/usr/src/app/api.md" -p 3000:3000 --name api_mocks ajnasz/api-mock"
+  
 }
 
 def test(String environment){
