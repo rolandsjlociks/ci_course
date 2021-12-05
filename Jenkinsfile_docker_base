@@ -4,6 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh "docker build -t api_test_base . -f Dockerfile_base"
+                build job: "docker-executor2"
             }
         }
     }
