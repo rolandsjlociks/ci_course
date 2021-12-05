@@ -59,6 +59,7 @@ pipeline {
 
 def deploy(String environment){
     echo "Deployment to ${environment}"
+    build job: "ui_tests", parameters: [string(name: "$ENVIRONMENT", value: "${environment}")]
 }
 
 def test(String environment){
